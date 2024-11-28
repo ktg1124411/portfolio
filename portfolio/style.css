@@ -1,0 +1,113 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 카드처럼 그림자 추가 */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* section 스타일 */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 카드 효과 */
+    width: 80%; /* 섹션 너비 설정 */
+    max-width: 600px; /* 최대 너비를 설정 */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 버튼 스타일 */
+.toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .logo {
+        width: 100px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .toggle-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    section {
+        width: 90%;
+    }
+}

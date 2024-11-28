@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="image/1.jpeg" alt="로고" class="logo">
+        <h1>キムヒョンジュン</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#projects">経歴</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>自己紹介</h2>
+        <button class="toggle-button" onclick="toggleContent('about-content')">自己紹介を見る</button>
+        <div id="about-content" class="hidden">
+            <p>간단한 자기소개 내용을 넣으세요.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>経歴</h2>
+        <button class="toggle-button" onclick="toggleContent('projects-content')">経歴を見る</button>
+        <div id="projects-content" class="hidden">
+            <p>참여한 주요 프로젝트들을 소개하세요.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>連絡先</h2>
+        <p>Email: ktg1124411@gmail.com</p>
+        <p>Tel:+81 070-4076-4295</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
