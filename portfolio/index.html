@@ -14,33 +14,42 @@
             <ul>
                 <li><a href="#about">自己紹介</a></li>
                 <li><a href="#projects">経歴</a></li>
+                <li><a href="#contact">自己PR</a></li>
                 <li><a href="#contact">連絡先</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>自己紹介</h2>
-        <button class="toggle-button" onclick="toggleContent('about-content')">自己紹介を見る</button>
-        <div id="about-content" class="hidden">
-            <p>간단한 자기소개 내용을 넣으세요.</p>
-        </div>
-    </section>
+    <main>
+        <div class="grid-container">
+            <section id="about">
+                <h2>自己紹介</h2>
+                <button class="toggle-button" onclick="openSelfIntroduction()">自己紹介を見る</button>
+                <div id="about-content" class="hidden">
+                    <p>はじめまして、今度御社の地域正社員に応募したキムヒョンジュンと申します。...</p>
+                </div>
+            </section>
 
-    <section id="projects">
-        <h2>経歴</h2>
-        <button class="toggle-button" onclick="toggleContent('projects-content')">経歴を見る</button>
-        <div id="projects-content" class="hidden">
-            <p>참여한 주요 프로젝트들을 소개하세요.</p>
-        </div>
-    </section>
+            <section id="projects">
+                <h2>経歴</h2>
+                <button class="toggle-button" onclick="openPopup('KJ')">有限会社KJ の経歴</button>
+                <button class="toggle-button" onclick="openPopup('EightZero')">株式会社エイトゼロ の経歴</button>
+            </section>
 
-    <section id="contact">
-        <h2>連絡先</h2>
-        <p>Email: ktg1124411@gmail.com</p>
-        <p>Tel:+81 070-4076-4295</p>
-    </section>
+            <section id="self-pr">
+                <h2>自己PR</h2>
+                <button class="toggle-button" onclick="openPopup('SelfPR')">自己PRを見る</button>
+            </section>
+
+            <section id="contact">
+                <h2>連絡先</h2>
+                <p>Email: ktg1124411@gmail.com</p>
+                <p>Tel:+81 070-4076-4295</p>
+            </section>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
